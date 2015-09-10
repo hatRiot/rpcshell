@@ -44,3 +44,9 @@ localhost >
 ```
 
 Shell works as advertised.
+
+# Axis2 Trouble
+
+If you deploy and notice your service isn't there, keep trying.  Sometimes it takes up to 10 seconds to populate and properly deploy.  If the service still isn't there, scroll to the bottom of the services tab and see if there were deploy errors.  Axis2 gives useful stack trace information for diagnosing the issue.
+
+Please note that if you screw up once, you'll need to change the service name and the invoke function name (default "help") in order to properly redeploy.  Axis2 will vomit an error about name collisions if you simply just redeploy.
